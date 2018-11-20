@@ -4,7 +4,7 @@
 <title>Wednesday</title>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/template.css">
-<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Noto+Sans:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Noto+Sans:700|Indie+Flower" rel="stylesheet">
 
 <style>
     /*CSS CODE*/
@@ -17,11 +17,14 @@
         color: #3f72af;
     }
 
-
+    .slice2color {
+        color: #112d4e;
+    }
 
     div {
         box-sizing: border-box;
         overflow: hidden;
+
     }
 
     .grid-container {
@@ -61,7 +64,7 @@
     }
 
     .grid-container:hover div[class*='slice'] {
-        width: 100px;
+        width: 50px;
     }
 
     .grid-container div[class*='slice']:hover {
@@ -96,6 +99,8 @@
 
 
 
+
+
     /*#.button-container {*/
 
     position: relative;
@@ -110,8 +115,9 @@
         content: '';
         display: inline-block;
         height: 48%;
-        /* vertical-align:middle; height: 100%;*/
+
     }
+
 
     .button-container a {
         transition: all 1s ease-out;
@@ -364,11 +370,18 @@
     }
 
 
-
-
     .content-2 {
-        margin-left: 500px;
-        opacity: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 30pt;
+        margin-left: 300px;
+        opacity: 80;
+    }
+
+
+
+
+    .font-size {
+        font-size: 50pt;
     }
 
     .slice-2:hover .content-2 {
@@ -376,6 +389,7 @@
         transition: opacity 2s ease-in-out;
         transition-delay: 0.5s;
     }
+
 
     /* P3 */
 
@@ -389,7 +403,6 @@
         margin-top: 150px;
     }
 
-
     .circle-2 {
         background-color: #231f20;
         width: 180px;
@@ -399,9 +412,6 @@
         margin-left: 100px;
     }
 
-    .content-3 {
-        opacity: 0;
-    }
 
     .slice-3:hover .content-3 {
         opacity: 1;
@@ -429,16 +439,13 @@
     }
 
 
-    .slice-4:hover .circle-3 {
-        transform: translateX(380px);
+    .slice-4:hover .content-4 {
+        transform: translateX(360px);
         transition: transform 1.5s;
     }
 
 
 
-    .content-4 {
-        opacity: 0;
-    }
 
     .slice-4:hover .content-4 {
         opacity: 1;
@@ -465,6 +472,75 @@
 
     }
 
+    .button-container {
+        overflow: hidden;
+    }
+
+    .one_fourth {
+        position: static
+    }
+
+    .button-images {
+        position: relative;
+    }
+
+
+    .button-container-wrapper .content-2 {
+        position: absolute;
+        font-family: 'Indie Flower', cursive;
+        color: #e8a2a2;
+        width: 100%;
+        font-size: 12pt;
+        line-height: 25px;
+        left: 300px;
+        right: 200px;
+        top: 130px;
+        display: none;
+    }
+
+    .button-container-wrapper2 .content-2 {
+        position: absolute;
+        font-family: 'Indie Flower', cursive;
+        color: #e8a2a2;
+        width: 100%;
+        font-size: 12pt;
+        line-height: 25px;
+        left: 300px;
+        right: 200px;
+        top: 130px;
+        display: none;
+    }
+
+
+
+    .button-container-wrapper2 {
+        position: relative;
+        background-color: #112d4e;
+        width: 180px;
+        height: 180px;
+        border-radius: 180px;
+        margin-top: 20px;
+        margin-left: 22px;
+
+    }
+
+
+    .button-container-wrapper2:hover .content-2 {
+        display: block;
+    }
+
+    .button-container-wrapper2:hover .content-4 {
+        display: block;
+    }
+
+    .button-container-wrapper:hover .content-2 {
+        display: block;
+    }
+
+    .button-container-wrapper2:hover .content-4 {
+        display: block;
+    }
+
 </style>
 
 
@@ -489,61 +565,160 @@
                             <div class="time-3">Night</div>
                             <div class="title-3">6 pm - 10 pm</div>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="col-3 h-1000 slice-2">
                     <div id="morning">Morning</div>
                     <div class="button-images">
                         <div class="one_fourth">
-                            <div class="button-container">
-                                <a href="#">8:00am</a>
-                                <img src="Images/morning-1.jpg" />
-                            </div>
-                        </div>
-                        <div class="one_fourth">
-                            <div class="button-container">
-                                <a href="#">9:02am</a>
-                                <img src="Images/morning-2.jpg" />
-                            </div>
-                            <div class="one_fourth">
-                                <div class="button-container circle3">
-                                    <a href="#">9:02am</a>
-                                    <img src="Images/morning-3.jpg" />
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/morning-1.jpg" />
+                                </div>
+                                <div class="content-2 font-size">
+                                    8:30 AM<br>Wake up in the morning and enjoy the sunlight.
                                 </div>
                             </div>
-                            <div class="button-container circle4">
-                                <a href="#">9:02am</a>
-                                <img src="Images/morning-4.jpg" />
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/morning-4.jpg" />
+                                </div>
+                                <div class="content-2">
+                                    10:20 AM<br>I walked my dog Arthur around my apartment. <br>he is still a corgi puppy!
+                                </div>
                             </div>
 
                         </div>
-                    </div>
-                    <div class="content-2">
-                        8:30am<br>Wake up in the morning and enjoy the sunlight.
-                    </div>
+                        <div class="one_fourth">
+                            <div class="button-container-wrapper">
+                                <div class="button-container ">
+                                    <a href="#"></a>
+                                    <img src="Images/morning-2.jpg" />
+                                </div>
+                                <div class="content-2">
+                                    9:15 AM<br>I steamed some frozen dumplings I bought from <br>H-mart couple days ago. The pork and rice noodles <br>were surprisingly good. I thought I should buy more <br>of them next time!
 
+                                </div>
+                            </div>
+                            <div class="button-container-wrapper">
+                                <div class="button-container ">
+                                    <a href="#"></a>
+                                    <img src="Images/morning-3.jpg" />
+                                </div>
+
+                                <div class="content-2">
+                                    11:03 AM<br>Arthur loves to stay at the balcony. Usually he <br>would bark at the sound outside but whenever<br>he's staying at the balcony, he is always peace<br>and quiet. Maybe I should consider building a house<br>for him at the balcony. I once built a bird house<br> in my body world machine class using wood, so <br>I guess I may have the skills to build a dog house<br>,too.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-3 h-1000 slice-3">
                     <div id="afternoon">Afternoon</div>
-                    <div class="one_fourth">
-                        <div class="button-container2">
-                            <a href="#">9:02am</a>
-                            <img src="Images/morning-2.jpg" />
+                    <div class="button-images">
+                        <div class="one_fourth">
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/afternoon-1.jpg" />
+                                </div>
+                                <div class="content-2 color-3">
+                                    12:30 AM<br>I took Arthur to the Veterinarian for his physical <br>examination. He was being overly excited because <br>he hadn't been there for a long time. He is one of <br>those dogs that never scared of the vet. When the <br>vet tried to give him a shot, he didn't even care <br>about it and kept his excitement. WOW!
+                                </div>
+                            </div>
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/afternoon-4.jpg" />
+                                </div>
+                                <div class="content-2 ">
+                                    2:40 PM<br>I took Arthur to the dog park. He met some of his <br>friends and enjoyed the best time of his day.
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="content-3">
+                        <div class="one_fourth">
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/afternoon-2.jpg" />
+                                </div>
+                                <div class="content-2">
+                                    1:35 PM<br>I went to Shoyou Sushi for lunch and ordered <br>Sashimi bowl, there was a little octopus on the side. <br>This is probably the best sushi restaurant I've been <br>to in Baltimore!
+                                </div>
+                            </div>
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/afternoon-3.jpg" />
+                                </div>
+
+                                <div class="content-2">
+                                    4:00 PM<br>I was driving by the Johns Hopkins campus.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 h-1000 slice-4">
                     <div id="night">Night</div>
-                    <div class="circle-3"></div>
-                    <div class="content-4">
 
+                    <div class="button-images">
+                        <div class="one_fourth">
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/night-1.jpg" />
+                                </div>
+                                <div class="content-2 font-size">
+                                    5:25 PM<br>I went to Tsaocaa Tea and bought a bubble tea.
+                                </div>
+                            </div>
+
+                            <div class="button-container-wrapper">
+                                <div class="button-container">
+                                    <a href="#"></a>
+                                    <img src="Images/night-3.jpg" />
+                                </div>
+                                <div class="content-2">
+                                    8:15 PM<br>I made some chicken breasts and smoothes with<br>strawberries, blueberries, bananas, apples, coconut <br>milk, yogurt and spinach. I guess Arthur wanted <br>some too!
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="one_fourth">
+                            <div class="button-container-wrapper">
+                                <div class="button-container ">
+                                    <a href="#"></a>
+                                    <img src="Images/night-2.jpg" />
+                                </div>
+                                <div class="content-2">
+                                    7:30 PM<br>I decided to go to the the gym for a 30-minute-run <br>so I could burn some calories.
+
+                                </div>
+                            </div>
+                            <div class="button-container-wrapper">
+                                <div class="button-container ">
+                                    <a href="#"></a>
+                                    <img src="Images/night-4.jpg" />
+                                </div>
+
+                                <div class="content-2">
+                                    10:02 PM<br>I went to the bed. This was a nice day.
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
